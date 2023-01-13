@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Crustacés en folie</title>
+</head>
+<body>
+    <form action="" method="POST" >
+        {{form.csrf_token}}
+        <div>
+            {{form.pattern_1.label}} {{form.pattern_1(size=4)}}
+        </div>
+        <div>
+            {{form.pattern_2.label}} {{form.pattern_2(size=4)}}
+        </div>
+        <div>
+            {{form.text.label}} {{form.text(size=10)}}
+        </div>
+        <input type = "submit" value ="Tout trouver !">
+    </form>
+        <h1>{% if text %}{{ text }}<br><br> 
+            {{ pattern_1 }} apparaît {{ count_1 }} fois dans ce texte <br><br> 
+            {{ pattern_2 }} apparaît {{ count_2 }} fois dans ce texte{% else %}>Quel est votre texte ?{% endif %}
+        </h1>
+</body>
+</html>

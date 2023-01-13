@@ -1,0 +1,12 @@
+0 boxer
+1 EntleBucher
+2 Greater_Swiww_Moutain_dog
+3 Irish_water_spaniel
+4 kelpie
+5 komondor
+6 miniature_schnauzer
+7 Norwich_terrier
+8 Pembroke
+9 soft-coated_wheaten_terrier
+10 Sussex_spaniel
+11 toy_terrier

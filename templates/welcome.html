@@ -1,0 +1,55 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+             data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src="https://gretaformation.ac-orleans-tours.fr/sites/all/themes/themes/adscom/images/logo.jpg" alt="greta" height="36">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+        <div class="jumbotron">
+            <h1>Bienvenu dans la formation GRETA</h1>
+            <p>Vous allez aimer Flutter, je vous le dis !</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="https://jardinage.lemonde.fr/images/dossiers/2021-10/chat-heureux-151433.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <a href="#" class="thumbnail">
+                  <img src="https://i-mom.unimedias.fr/2022/03/14/chat.jpg?auto=format,compress&cs=tinysrgb" alt="...">
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-4">
+                <a href="#" class="thumbnail">
+                  <img src="https://img-3.journaldesfemmes.fr/LQxOvART71F43FVdeMif5l1W8eg=/1500x/smart/ff58885a0e284ba18d7123556007e910/ccmcms-jdf/11633317.jpg" alt="...">
+                </a>
+              </div>
+            ...
+          </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+{{ wtf.quick_form(form) }}
+{% endblock %}
